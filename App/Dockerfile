@@ -12,4 +12,5 @@ RUN pip install djangorestframework==3.14.0
 #RUN pip install -r requirements.txt
 #COPY ./ ./
 EXPOSE 8000
-CMD ["sh", "./App/django.sh"]
+RUN python manage.py runserver 0.0.0.0:8000
+#CMD ["sh", "./App/django.sh"]
